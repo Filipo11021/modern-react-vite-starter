@@ -1,7 +1,7 @@
-import type { FC } from 'react';
-import { createRoute } from '@tanstack/react-router';
-import { rootRoute } from './router-root';
 import { Button } from '@/shared/ui/button';
+import { createRoute } from '@tanstack/react-router';
+import type { FC } from 'react';
+import { rootRoute } from './router-root';
 
 export const HomePage: FC = () => {
 	return (

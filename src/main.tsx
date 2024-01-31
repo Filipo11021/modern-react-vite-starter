@@ -1,8 +1,8 @@
+import { RouterProvider } from '@tanstack/react-router';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { RouterProvider } from '@tanstack/react-router';
-import { router } from './router-root';
 import './globals.css';
+import { router } from './router-root';
 
 const root = document.getElementById('root');
 if (!root) throw Error('unknown root element');
