@@ -1,0 +1,60 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
+  "organizeImports": {
+    "enabled": true,
+    "ignore": ["dist"]
+  },
+  "linter": {
+    "ignore": ["dist"],
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "complexity": {
+        "noExcessiveCognitiveComplexity": "warn",
+        "useSimplifiedLogicExpression": "warn",
+        "noVoid": "error"
+      },
+      "correctness": {
+        "noUndeclaredVariables": "error",
+        "noUnusedVariables": "error",
+        "useHookAtTopLevel": "error"
+      },
+      "style": {
+        "noNegationElse": "error",
+        "useShorthandAssign": "error"
+      },
+      "suspicious": {
+        "noConsoleLog": "error",
+        "noMisrefactoredShorthandAssign": "error"
+      },
+      "nursery": {
+        "useNumberNamespace": "error",
+        "useAwait": "error",
+        "noDuplicateJsonKeys": "error",
+        "noUnusedImports": "error",
+        "useGroupedTypeImport": "error",
+        "useImportRestrictions": "error",
+        "useNodejsImportProtocol": "error",
+        "useImportType": "error",
+        "noInvalidUseBeforeDeclaration": "error",
+        "noGlobalEval": "error"
+      }
+    }
+  },
+  "formatter": {
+    "ignore": ["dist"],
+    "enabled": true,
+    "indentStyle": "tab",
+    "lineEnding": "lf",
+    "lineWidth": 80,
+    "formatWithErrors": false
+  },
+  "javascript": {
+    "formatter": {
+      "enabled": true,
+      "quoteStyle": "single",
+      "semicolons": "always",
+      "trailingComma": "es5"
+    }
+  }
+}
