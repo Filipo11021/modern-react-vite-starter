@@ -1,5 +1,5 @@
 import { Button } from '@/shared/ui/button';
-import { createRoute } from '@tanstack/react-router';
+import { Link, createRoute } from '@tanstack/react-router';
 import type { FC } from 'react';
 import { rootRoute } from '@/shared/root-route';
 import { useSuspenseQuery } from '@tanstack/react-query';
@@ -13,9 +13,15 @@ export const HomePage: FC = () => {
 			<h1>home page</h1>
 			<Button onClick={() => alert('click')}>test</Button>
 
-			{data.map(({ title, id }) => (
-				<h2 key={id}>{title}</h2>
-			))}
+			<ul>
+				{data.map(({ title, id }) => (
+					<li key={id}>
+						<Link to="/$postId" params={{ postId: id.toString() }}>
+							{title}
+						</Link>
+					</li>
+				))}
+			</ul>
 		</div>
 	);
 };
