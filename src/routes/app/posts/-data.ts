@@ -9,5 +9,8 @@ async function fetchPosts() {
 
 export const postsQueryOptions = queryOptions({
 	queryKey: ['posts'],
-	queryFn: () => fetchPosts(),
+	queryFn: async () => {
+		await new Promise((res) => setTimeout(res, 4000))
+		return fetchPosts()
+	},
 });
