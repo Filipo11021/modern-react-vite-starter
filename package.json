@@ -10,6 +10,7 @@
     "lint:fix": "npm run lint -- --apply",
     "preview": "vite preview"
   },
+  "license": "MIT",
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
     "@radix-ui/react-label": "^2.0.2",
