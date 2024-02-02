@@ -2,7 +2,7 @@ import { useQuery } from '@tanstack/react-query';
 import { Navigate } from '@tanstack/react-router';
 import type { ReactNode } from 'react';
 import { LoadingPage } from '../loading-page';
-import { sessionQueryOptions } from './useSession';
+import { sessionQueryOptions } from './session';
 
 export function AuthRoute({
 	type,

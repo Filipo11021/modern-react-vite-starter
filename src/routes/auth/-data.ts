@@ -1,4 +1,5 @@
 import { httpClient } from '@/shared/api/api-client';
+import { setAuthToken } from '@/shared/auth/auth-token';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { z } from 'zod';
 
@@ -33,7 +34,12 @@ export function useLoginMutation() {
 	const queryClient = useQueryClient();
 	const mutation = useMutation({
 		mutationFn: loginMutationFn,
-		onSettled() {
+		onSuccess({ token }) {
+			setAuthToken(token);
+			queryClient.invalidateQueries();
+		},
+		onError() {
+			setAuthToken('');
 			queryClient.invalidateQueries();
 		},
 	});

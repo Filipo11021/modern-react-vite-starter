@@ -1,4 +1,4 @@
-import { sessionQueryOptions } from '@/shared/auth/useSession';
+import { sessionQueryOptions } from '@/shared/auth/session';
 import { Avatar, AvatarFallback } from '@/shared/ui/avatar';
 import { Button } from '@/shared/ui/button';
 import {

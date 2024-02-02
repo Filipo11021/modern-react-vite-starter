@@ -1,9 +1,6 @@
 import { env } from '@/shared/env';
 import { createFetcher } from './fetcher';
-
-function getAuthToken() {
-	return 'tes';
-}
+import { getAuthToken } from '@/shared/auth/auth-token';
 
 export const httpClient = createFetcher({
 	baseUrl: env.VITE_API_URL,
