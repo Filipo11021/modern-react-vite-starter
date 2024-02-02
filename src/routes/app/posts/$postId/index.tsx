@@ -1,6 +1,6 @@
+import { useSuspenseQuery } from '@tanstack/react-query';
 import { createFileRoute } from '@tanstack/react-router';
 import type { ReactElement } from 'react';
-import { useSuspenseQuery } from '@tanstack/react-query';
 import { postQueryOptions } from './-data';
 
 export const Route = createFileRoute('/app/posts/$postId/')({

@@ -1,60 +1,60 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
-  "organizeImports": {
-    "enabled": true,
-    "ignore": ["dist", "routeTree.gen.ts"]
-  },
-  "linter": {
-    "ignore": ["dist", "routeTree.gen.ts"],
-    "enabled": true,
-    "rules": {
-      "recommended": true,
-      "complexity": {
-        "noExcessiveCognitiveComplexity": "warn",
-        "useSimplifiedLogicExpression": "warn",
-        "noVoid": "error"
-      },
-      "correctness": {
-        "noUndeclaredVariables": "error",
-        "noUnusedVariables": "error",
-        "useHookAtTopLevel": "error"
-      },
-      "style": {
-        "noNegationElse": "error",
-        "useShorthandAssign": "error"
-      },
-      "suspicious": {
-        "noConsoleLog": "error",
-        "noMisrefactoredShorthandAssign": "error"
-      },
-      "nursery": {
-        "useNumberNamespace": "error",
-        "useAwait": "error",
-        "noDuplicateJsonKeys": "error",
-        "noUnusedImports": "error",
-        "useGroupedTypeImport": "error",
-        "useImportRestrictions": "error",
-        "useNodejsImportProtocol": "error",
-        "useImportType": "error",
-        "noInvalidUseBeforeDeclaration": "error",
-        "noGlobalEval": "error"
-      }
-    }
-  },
-  "formatter": {
-    "ignore": ["dist", "routeTree.gen.ts"],
-    "enabled": true,
-    "indentStyle": "tab",
-    "lineEnding": "lf",
-    "lineWidth": 80,
-    "formatWithErrors": false
-  },
-  "javascript": {
-    "formatter": {
-      "enabled": true,
-      "quoteStyle": "single",
-      "semicolons": "always",
-      "trailingComma": "es5"
-    }
-  }
+	"$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
+	"organizeImports": {
+		"enabled": true,
+		"ignore": ["dist", "routeTree.gen.ts"]
+	},
+	"linter": {
+		"ignore": ["dist", "routeTree.gen.ts"],
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"complexity": {
+				"noExcessiveCognitiveComplexity": "warn",
+				"useSimplifiedLogicExpression": "warn",
+				"noVoid": "error"
+			},
+			"correctness": {
+				"noUndeclaredVariables": "error",
+				"noUnusedVariables": "error",
+				"useHookAtTopLevel": "error"
+			},
+			"style": {
+				"noNegationElse": "error",
+				"useShorthandAssign": "error"
+			},
+			"suspicious": {
+				"noConsoleLog": "error",
+				"noMisrefactoredShorthandAssign": "error"
+			},
+			"nursery": {
+				"useNumberNamespace": "error",
+				"useAwait": "error",
+				"noDuplicateJsonKeys": "error",
+				"noUnusedImports": "error",
+				"useGroupedTypeImport": "error",
+				"useImportRestrictions": "error",
+				"useNodejsImportProtocol": "error",
+				"useImportType": "error",
+				"noInvalidUseBeforeDeclaration": "error",
+				"noGlobalEval": "error"
+			}
+		}
+	},
+	"formatter": {
+		"ignore": ["dist", "routeTree.gen.ts"],
+		"enabled": true,
+		"indentStyle": "tab",
+		"lineEnding": "lf",
+		"lineWidth": 80,
+		"formatWithErrors": false
+	},
+	"javascript": {
+		"formatter": {
+			"enabled": true,
+			"quoteStyle": "single",
+			"semicolons": "always",
+			"trailingComma": "es5"
+		}
+	}
 }

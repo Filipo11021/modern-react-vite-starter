@@ -1,6 +1,6 @@
-import type { ReactElement } from 'react';
 import { AuthRoute } from '@/shared/auth/auth-route';
 import { createFileRoute } from '@tanstack/react-router';
+import type { ReactElement } from 'react';
 
 export const Route = createFileRoute('/')({
 	component: () => (

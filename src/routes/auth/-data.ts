@@ -24,7 +24,7 @@ function loginMutationFn(data: LoginData) {
 		errorSchema: loginErrorResponseSchema,
 		options: {
 			body: JSON.stringify(data),
-      method: "POST"
+			method: 'POST',
 		},
 	});
 }

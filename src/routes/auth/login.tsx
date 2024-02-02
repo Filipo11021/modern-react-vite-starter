@@ -1,6 +1,3 @@
-import type { ReactElement } from 'react';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { useForm } from 'react-hook-form';
 import { Button } from '@/shared/ui/button';
 import {
 	Form,
@@ -11,7 +8,10 @@ import {
 	FormMessage,
 } from '@/shared/ui/form';
 import { Input } from '@/shared/ui/input';
+import { zodResolver } from '@hookform/resolvers/zod';
 import { Link, createFileRoute } from '@tanstack/react-router';
+import type { ReactElement } from 'react';
+import { useForm } from 'react-hook-form';
 import { type LoginData, loginDataSchema, useLoginMutation } from './-data';
 
 export const Route = createFileRoute('/auth/login')({

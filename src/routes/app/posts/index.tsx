@@ -1,8 +1,8 @@
+import { LoadingPage } from '@/shared/loading-page';
+import { useSuspenseQuery } from '@tanstack/react-query';
 import { Link, createFileRoute } from '@tanstack/react-router';
 import type { ReactElement } from 'react';
-import { useSuspenseQuery } from '@tanstack/react-query';
 import { postsQueryOptions } from './-data';
-import { LoadingPage } from '@/shared/loading-page';
 
 export const Route = createFileRoute('/app/posts/')({
 	component: PostsPage,

@@ -13,4 +13,3 @@ export const sessionQueryOptions = queryOptions({
 	queryKey: ['session'],
 	queryFn: () => null,
 });
-
