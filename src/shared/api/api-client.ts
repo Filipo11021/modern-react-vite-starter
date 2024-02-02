@@ -13,7 +13,7 @@ export const httpClient = createFetcher({
 		return {
 			headers: {
 				'Content-Type': 'application/json',
-				Authorization: `Bearer ${token}`,
+				Authorization: `${token}`,
 			},
 			credentials: 'include',
 		};

@@ -4,6 +4,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './globals.css';
 import { routeTree } from './routeTree.gen';
+import { env } from '@/shared/env';
+
+export async function enableMocking() {
+	if (env.NODE_ENV !== 'development') {
+		return;
+	}
+
+	const { worker } = await import('./mocks/browser-mock');
+	return worker.start();
+}
+
+await enableMocking();
 
 // Set up a Router instance
 const router = createRouter({
