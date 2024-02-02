@@ -12,7 +12,11 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { Link, createFileRoute } from '@tanstack/react-router';
 import type { ReactElement } from 'react';
 import { useForm } from 'react-hook-form';
-import { type LoginData, loginDataSchema, useLoginMutation } from './-data';
+import {
+	type LoginData,
+	loginDataSchema,
+	useLoginMutation,
+} from './-login.data';
 
 export const Route = createFileRoute('/auth/login')({
 	component: LoginPage,
