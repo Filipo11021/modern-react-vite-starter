@@ -2,7 +2,7 @@ import { env } from '@/shared/env';
 import { createFetcher } from './fetcher';
 
 function getAuthToken() {
-	return 'test';
+	return 'tes';
 }
 
 export const httpClient = createFetcher({
