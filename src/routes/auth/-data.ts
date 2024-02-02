@@ -1,5 +1,5 @@
 import { httpClient } from '@/shared/api/api-client';
-import { setAuthToken } from '@/shared/auth/auth-token';
+import { setAuthToken } from '@/shared/api/auth-token';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { z } from 'zod';
 
