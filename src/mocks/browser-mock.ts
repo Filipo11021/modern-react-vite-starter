@@ -1,6 +1,6 @@
 import { env } from '@/shared/env';
-import { setupWorker } from 'msw/browser';
 import { http, HttpResponse } from 'msw';
+import { setupWorker } from 'msw/browser';
 
 const testToken = 'test';
 

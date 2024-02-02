@@ -1,6 +1,6 @@
+import { httpClient } from '@/shared/api/api-client';
 import { queryOptions } from '@tanstack/react-query';
 import { z } from 'zod';
-import { httpClient } from '@/shared/api/api-client';
 
 const sessionErrorResponseSchema = z
 	.object({

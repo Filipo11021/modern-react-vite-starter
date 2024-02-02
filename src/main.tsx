@@ -1,10 +1,10 @@
 import { queryClient } from '@/routes/__root';
+import { env } from '@/shared/env';
 import { RouterProvider, createRouter } from '@tanstack/react-router';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './globals.css';
 import { routeTree } from './routeTree.gen';
-import { env } from '@/shared/env';
 
 export async function enableMocking() {
 	if (env.NODE_ENV !== 'development') {
